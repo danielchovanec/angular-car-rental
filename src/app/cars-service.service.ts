@@ -2,7 +2,7 @@ import { ICars } from 'src/app/Cars';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http'
 import { CARS } from './carsData';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -30,6 +30,5 @@ export class CarsServiceService {
 
   addCar(car: ICars): Observable<ICars> {
     return this.http.post<ICars>(this.apiUrl, car, httpOptions);
-    // tu sa to zrubalo cca 1.36 hod.
   }
 }

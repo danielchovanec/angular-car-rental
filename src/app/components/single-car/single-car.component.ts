@@ -20,4 +20,8 @@ export class SingleCarComponent implements OnInit {
     this.onDeleteCar.emit(car);
   }
 
+  carID(){
+    // console.log(this.car.id)
+    return this.car.id;
+  }
 }

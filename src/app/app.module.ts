@@ -15,6 +15,7 @@ import { RentFormComponent } from './components/rent-form/rent-form.component';
 import { FormsModule } from '@angular/forms';
 import { AddCarComponent } from './components/add-car-component/add-car.component';
 import { SubmitCarComponent } from './components/submit-car/submit-car.component';
+import { MoreDetailsComponent } from './components/more-details/more-details.component';
 
 const appRoutes: Routes = [
   {path: '', component: ListOfCarsComponent},
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     AboutComponent,
     RentFormComponent,
     AddCarComponent,
-    SubmitCarComponent
+    SubmitCarComponent,
+    MoreDetailsComponent
   ],
   imports: [
     BrowserModule,

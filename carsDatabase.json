@@ -29,7 +29,16 @@
       "model": "AMG GT",
       "yearOfMake": "2020",
       "power": "537",
+      "available": true,
       "id": 4
+    },
+    {
+      "manufacturer": "Audi",
+      "model": "RS6",
+      "yearOfMake": "2021",
+      "power": "600",
+      "available": true,
+      "id": 5
     }
   ]
 }

@@ -14,6 +14,7 @@ export class SubmitCarComponent implements OnInit {
   model!: string;
   yearOfMake!: string;
   power!: string;
+  available!: boolean;
 
   constructor() { }
 
@@ -39,7 +40,8 @@ export class SubmitCarComponent implements OnInit {
       manufacturer: this.manufacturer,
       model: this.model,
       yearOfMake: this.yearOfMake,
-      power: this.power
+      power: this.power,
+      available: this.available = true
     }
 
     this.onAddCar.emit(newCar);

@@ -27,11 +27,5 @@ export class ListOfCarsComponent implements OnInit {
         console.log('nothing changed')
       }
 
-  // }
-
-  //  addCar(car: ICars){
-  //   this.carService.addCar(car).subscribe
-  // }
-
     }
   }

@@ -25,14 +25,6 @@ export class DeleteCarComponent implements OnInit {
     this.onDeleteCar.emit(car);
   }
 
-  // deleteCar(car: ICars) {
-  //   if(confirm('Are you sure? ')) {
-  //     this.carService.deleteCar(car).subscribe(() => (this.cars = this.cars.filter(t => t.id !== car.id)))
-  //   }
-  //     else {
-  //       console.log('nothing changed')
-  //     }
 
-  // }
 
 }

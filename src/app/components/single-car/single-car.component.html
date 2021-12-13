@@ -6,11 +6,14 @@
       text="Delete Car"
       (click)="onDelete(car)"
     ></app-button>
-    <app-button color="blue" text="More Details"></app-button>
+    <app-button color="blue" text="More Details">
+      <app-more-details></app-more-details>
+    </app-button>
     <app-button
       color="green"
       text="Rent me"
       routerLink="/rentForm"
+      (click)="carID()"
     ></app-button>
   </div>
 </div>

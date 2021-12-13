@@ -42,13 +42,16 @@ export class RentFormComponent implements OnInit {
       return;
     }
 
+  console.log(this.name + ' ' + this.surname + ', ' + this.address
+    + ', ' + this.country + ' Car: ' + this.carsOption)
+
     this.name = '';
     this.surname = '';
     this.address = '';
     this.country = '';
     this.carsOption = 'Select option..';
 
-    console.log(this.name)
+
   }
 
 
