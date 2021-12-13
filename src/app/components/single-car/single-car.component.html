@@ -1,0 +1,16 @@
+<div class="car">
+  <h3>{{ car.manufacturer }} {{ car.model }}</h3>
+  <div class="rightSideContainer">
+    <app-button
+      color="red"
+      text="Delete Car"
+      (click)="onDelete(car)"
+    ></app-button>
+    <app-button color="blue" text="More Details"></app-button>
+    <app-button
+      color="green"
+      text="Rent me"
+      routerLink="/rentForm"
+    ></app-button>
+  </div>
+</div>

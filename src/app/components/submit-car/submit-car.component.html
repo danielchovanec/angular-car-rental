@@ -1,0 +1,37 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form">
+    <label for="manufacturer">Manufacturer: </label>
+    <input
+      type="text"
+      name="manufacturer"
+      [(ngModel)]="manufacturer"
+      id="manufacturer"
+      placeholder="Manufacturer"
+    />
+    <label for="model">Model: </label>
+    <input
+      type="text"
+      name="model"
+      [(ngModel)]="model"
+      id="model"
+      placeholder="Model"
+    />
+    <label for="yearOfMake">Year Of Make: </label>
+    <input
+      type="text"
+      name="yearOfMake"
+      [(ngModel)]="yearOfMake"
+      id="yearOfMake"
+      placeholder="Year Of Make"
+    />
+    <label for="power">Power (in hp): </label>
+    <input
+      type="text"
+      name="power"
+      [(ngModel)]="power"
+      id="power"
+      placeholder="Power"
+    />
+  </div>
+  <input type="submit" value="Save car" class="btn btn-block" />
+</form>

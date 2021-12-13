@@ -1,0 +1,46 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form">
+    <label for="name">Name: </label>
+    <input
+      type="text"
+      onfocus="this.value=''"
+      name="name"
+      [(ngModel)]="name"
+      id="name"
+      placeholder="First name"
+    />
+    <label for="surname">Surname: </label>
+    <input
+      type="text"
+      name="surname"
+      [(ngModel)]="surname"
+      id="surname"
+      placeholder="Last name"
+    />
+    <label for="address">Home Address: </label>
+    <input
+      type="text"
+      name="address"
+      [(ngModel)]="address"
+      id="address"
+      placeholder="Home Address"
+    />
+    <label for="country">Country: </label>
+    <input
+      type="text"
+      name="country"
+      [(ngModel)]="country"
+      id="country"
+      placeholder="Country"
+    />
+    <label for="car">Select car to rent: </label>
+    <select id="car" name="carsOption" [(ngModel)]="carsOption">
+      <option value="car1" class="selectList">Select option..</option>
+      <option class="selectList" *ngFor="let car of cars">
+        {{ car.manufacturer }} {{ car.model }}
+      </option>
+    </select>
+
+    <input type="submit" value="Rent car" class="btn btn-block" />
+  </div>
+</form>
